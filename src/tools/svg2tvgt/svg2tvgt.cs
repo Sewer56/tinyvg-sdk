@@ -1856,7 +1856,7 @@ public class SvgPathParser
       var p = MoveCursor(pair, relative);
       if (first)
       {
-        if (path_start != null) throw new InvalidOperationException("New MoveTo detected without ClosePath");
+        //if (path_start != null) throw new InvalidOperationException("New MoveTo detected without ClosePath");
         path_start = current_position;
         renderer.MoveTo(p);
       }
